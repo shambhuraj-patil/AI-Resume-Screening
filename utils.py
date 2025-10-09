@@ -1,9 +1,12 @@
 # utils.py
 import re
+import nltk
 from fuzzywuzzy import fuzz
 from nltk.corpus import stopwords
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
+
+nltk.download('stopwords')
 
 base_skills = [
     'python', 'java', 'c++', 'machine learning', 'deep learning', 'nlp',
