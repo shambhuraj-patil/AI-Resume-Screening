@@ -24,7 +24,7 @@ def extract_text_from_pdf(file):
 st.sidebar.title("🔍 Navigation")
 page = st.sidebar.radio("Go to:", ["📝 Input & Analyze", "📊 Results"])
 
-if page == "Input & Analyze":
+if page == "📝 Input & Analyze":
     st.title("🧠 AI Resume Analyzer")
     st.caption("Analyze and compare resumes against job descriptions.")
     st.divider()
@@ -74,7 +74,7 @@ if page == "Input & Analyze":
     st.divider()
     st.caption("👨💻 Built by **Shambhuraj Patil**")
 
-elif page == "Results":
+elif page == "📊 Results":
     st.title("📊 Analysis Results")
 
     if st.session_state['results_df'] is None:
