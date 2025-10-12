@@ -1,9 +1,9 @@
-import streamlit as st
+import time
 import PyPDF2
 import pandas as pd
-import matplotlib.pyplot as plt
 import seaborn as sns
-import time
+import streamlit as st
+import matplotlib.pyplot as plt
 
 from utils import clean_text, extract_skills, calculate_match_score
 
@@ -22,7 +22,7 @@ def extract_text_from_pdf(file):
 
 # Sidebar navigation
 st.sidebar.title("🔍 Navigation")
-page = st.sidebar.radio("Go to:", ["Input & Analyze", "Results"])
+page = st.sidebar.radio("Go to:", ["📝 Input & Analyze", "📊 Results"])
 
 if page == "Input & Analyze":
     st.title("🧠 AI Resume Analyzer")
